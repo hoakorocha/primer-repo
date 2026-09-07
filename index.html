@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growth — A powerful solution to grow your startup</title>
+    <meta
+      name="description"
+      content="Organize, collaborate, and track progress with Growth, the all-in-one platform for your startup."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="Growth home">
+          <span>Growth</span>
+          <svg class="logo__mark" viewBox="0 0 16 16" aria-hidden="true">
+            <path
+              d="M8 1.2 9.7 6.3 14.8 8 9.7 9.7 8 14.8 6.3 9.7 1.2 8l5.1-1.7L8 1.2Z"
+            />
+          </svg>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#features">Features</a>
+          <a class="nav__link" href="#about">About Us</a>
+          <a class="nav__link" href="#blog">Blog</a>
+        </nav>
+
+        <a class="btn btn--secondary-s header__login" href="#login">Login</a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <a href="#features">Features</a>
+        <a href="#about">About Us</a>
+        <a href="#blog">Blog</a>
+        <a href="#login">Login</a>
+        <a class="btn btn--primary" href="#pricing">Get started</a>
+      </nav>
+    </div>
+
+    <main id="top">
+      <section class="hero" id="features">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1>A powerful solution to grow your startup. Fast!</h1>
+            <p>
+              Organize, collaborate, and track progress seamlessly with our
+              all-in-one platform for your startup.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#pricing">Get started</a>
+              <a class="btn btn--secondary" href="#how-it-works">
+                <span class="btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                    <path d="M8.2 6.8v6.4L13.4 10 8.2 6.8Z" fill="currentColor" />
+                  </svg>
+                </span>
+                <span class="btn__label-desktop">Book a demo</span>
+                <span class="btn__label-mobile">Watch demo</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/image1mobile.png" />
+              <img
+                src="images/image1.png"
+                alt="Growth product dashboard with team timeline, sales chart and meeting invite"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="how" id="how-it-works">
+        <div class="container how__inner">
+          <h2>See how it works and get started in less than 2 minutes</h2>
+
+          <div class="how__media">
+            <img
+              src="images/image2.png"
+              alt="Product walkthrough showing collaboration, analytics and team calls"
+            />
+            <button
+              class="media-btn"
+              type="button"
+              data-state="paused"
+              aria-label="Play demo"
+            >
+              <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 7.2v9.6L17.2 12 9 7.2Z" />
+              </svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="8" y="7" width="2.6" height="10" rx="0.6" />
+                <rect x="13.4" y="7" width="2.6" height="10" rx="0.6" />
+              </svg>
+            </button>
+          </div>
+
+          <a class="btn btn--primary" href="#pricing">Get started</a>
+        </div>
+      </section>
+
+      <section class="testimonials" id="about">
+        <div class="container">
+          <h2>
+            Don’t just take our word for it, see the success stories from
+            businesses just like yours.
+          </h2>
+          <div class="testimonials__grid">
+            <article class="quote-card">
+              <p>
+                “We started using this design tool and have never looked back.
+                Our whole team now ships twice as fast.”
+              </p>
+              <span>Katherine Smith, Product Designer</span>
+            </article>
+            <article class="quote-card">
+              <p>
+                “Growth helped us organize every experiment in one place. The
+                dashboard finally matches how our startup actually works.”
+              </p>
+              <span>Daniel Chen, Startup CEO</span>
+            </article>
+            <article class="quote-card">
+              <p>
+                “The collaboration features are simple, beautiful and
+                surprisingly powerful. Onboarding took minutes, not weeks.”
+              </p>
+              <span>Amelia Ruiz, Head of Operations</span>
+            </article>
+            <article class="quote-card">
+              <p>
+                “We replaced three tools with Growth. Support is excellent and
+                the analytics keep our investors in the loop.”
+              </p>
+              <span>Marcus Johnson, Founder</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2>Pricing</h2>
+          <p class="pricing__lead">
+            Choose a plan that fits your startup and scale your business.
+          </p>
+
+          <div class="pricing__grid">
+            <article class="plan plan--simple">
+              <h3>Simple</h3>
+              <p class="plan__desc">
+                Everything you need to get your first projects off the ground.
+              </p>
+              <p class="plan__price">Free</p>
+              <ul class="plan__features">
+                <li>Tasks</li>
+                <li>Basic dashboard</li>
+                <li>Simple project board</li>
+                <li>Email support</li>
+              </ul>
+              <a class="btn btn--primary" href="#newsletter">Get started</a>
+            </article>
+
+            <article class="plan plan--premium">
+              <h3>Premium</h3>
+              <p class="plan__desc">
+                Advanced analytics and branding for teams ready to scale.
+              </p>
+              <p class="plan__price">$49 <span>/ month</span></p>
+              <ul class="plan__features">
+                <li>Unlimited tasks</li>
+                <li>Advanced analytics</li>
+                <li>Custom dashboards</li>
+                <li>Full branding</li>
+                <li>24/7 support</li>
+              </ul>
+              <a class="btn btn--primary" href="#newsletter">Get started</a>
+            </article>
+          </div>
+
+          <p class="pricing__note">
+            Prices include applicable taxes. 30-day trial, no credit card
+            required.
+          </p>
+          <a class="link-icon" href="#faq">
+            Learn more
+            <span class="link-icon__arrow" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container faq__inner">
+          <h2>FAQ</h2>
+
+          <div class="tabs" role="tablist" aria-label="FAQ categories">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" data-filter="all">
+              All
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="getting-started">
+              Getting started
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="pricing">
+              Pricing
+            </button>
+          </div>
+
+          <div class="accordion">
+            <article class="accordion__item is-open" data-category="getting-started">
+              <button class="accordion__trigger" type="button" aria-expanded="true">
+                How does the tool work?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion__panel">
+                <p>
+                  Create a workspace, invite your team and start adding tasks,
+                  boards and dashboards. Growth keeps progress, conversations
+                  and analytics in one place so you can go from idea to launch
+                  in minutes.
+                </p>
+              </div>
+            </article>
+
+            <article class="accordion__item" data-category="getting-started">
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Can I customize the platform?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion__panel">
+                <p>
+                  Yes. Premium plans include custom dashboards, branding and
+                  flexible workflows so the product matches how your startup
+                  already operates.
+                </p>
+              </div>
+            </article>
+
+            <article class="accordion__item" data-category="getting-started">
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Is there a mobile app?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion__panel">
+                <p>
+                  Growth is fully responsive in the browser, and native iOS and
+                  Android apps are included with every plan so your team can
+                  stay in sync on the go.
+                </p>
+              </div>
+            </article>
+
+            <article class="accordion__item" data-category="getting-started">
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                What integrations are available?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion__panel">
+                <p>
+                  Connect Slack, Google Workspace, GitHub, Notion and dozens of
+                  other tools. Premium also unlocks webhooks and the public API.
+                </p>
+              </div>
+            </article>
+
+            <article class="accordion__item" data-category="pricing">
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Do you offer a free trial?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion__panel">
+                <p>
+                  The Simple plan is free forever. Premium includes a 30-day
+                  trial with no credit card required so you can evaluate the
+                  full product first.
+                </p>
+              </div>
+            </article>
+
+            <article class="accordion__item" data-category="pricing">
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                Can I change or cancel my subscription?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion__panel">
+                <p>
+                  You can upgrade, downgrade or cancel at any time from billing
+                  settings. Changes take effect at the start of the next billing
+                  cycle.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="blog">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="logo logo--light" href="#top">
+            <span>Growth</span>
+            <svg class="logo__mark" viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M8 1.2 9.7 6.3 14.8 8 9.7 9.7 8 14.8 6.3 9.7 1.2 8l5.1-1.7L8 1.2Z"
+              />
+            </svg>
+          </a>
+
+          <div class="newsletter" id="newsletter">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Get product updates, customer stories and growth tips.</p>
+
+            <form
+              class="newsletter__form"
+              name="newsletter"
+              method="POST"
+              action="/"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              novalidate
+            >
+              <input type="hidden" name="form-name" value="newsletter" />
+              <p class="honeypot">
+                <label>
+                  Don’t fill this out if you’re human:
+                  <input name="bot-field" tabindex="-1" autocomplete="off" />
+                </label>
+              </p>
+
+              <label class="sr-only" for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+              <button class="btn btn--primary btn--form" type="submit">
+                Subscribe
+              </button>
+              <p class="form-message" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <div>
+            <h3>Company</h3>
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#about">Careers</a>
+            <a class="footer__link" href="#newsletter">Contact</a>
+            <a class="footer__link" href="#blog">Press</a>
+          </div>
+          <div>
+            <h3>Resources</h3>
+            <a class="footer__link" href="#blog">Blog</a>
+            <a class="footer__link" href="#faq">Documentation</a>
+            <a class="footer__link" href="#how-it-works">Tutorials</a>
+            <a class="footer__link" href="#about">Customer Stories</a>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <a class="footer__link" href="mailto:hello@growth.com">hello@growth.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <div class="social">
+          <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.5 9H4V20h2.5V9ZM5.25 4A1.5 1.5 0 1 0 5.26 7a1.5 1.5 0 0 0 0-3ZM20 20h-2.5v-5.6c0-1.7-.6-2.8-2.1-2.8-1.1 0-1.8.8-2.1 1.5-.1.3-.1.6-.1.9V20H11V9h2.4v1.5c.6-.9 1.6-2.2 4-2.2 2.9 0 4.6 1.9 4.6 5.9V20Z"
+              />
+            </svg>
+          </a>
+          <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M19.6 7.3c.5-.3.9-.8 1.1-1.4-.5.3-1 .5-1.6.6A2.6 2.6 0 0 0 14.6 9c0 .2 0 .4.1.6-2.2-.1-4.1-1.2-5.4-2.8-.2.4-.3.8-.3 1.3 0 .9.5 1.7 1.2 2.2-.4 0-.8-.1-1.2-.3v.1c0 1.3.9 2.3 2.1 2.6-.2.1-.5.1-.7.1h-.5c.3 1 1.3 1.8 2.5 1.8A5.3 5.3 0 0 1 5 16.5 7.4 7.4 0 0 0 9 17.6c4.8 0 7.4-4 7.4-7.4v-.3c.5-.4.9-.8 1.2-1.3-.5.2-1 .4-1.5.4Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p>© 2023 Growth. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="login-anchor" id="login" hidden></div>
+    <script src="script.js"></script>
+  </body>
+</html>
